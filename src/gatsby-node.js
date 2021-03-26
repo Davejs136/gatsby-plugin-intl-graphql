@@ -1,5 +1,5 @@
 const webpack = require("webpack")
-const { createInitialJson, modifyContent } = require("./helpers")
+const { createInitialJson, modifyFileContent } = require("./helpers/index")
 
 exports.onCreateWebpackConfig = ({ actions, plugins }, pluginOptions) => {
   const { redirectComponent = null, languages, defaultLanguage } = pluginOptions
@@ -37,7 +37,7 @@ exports.sourceNodes = (_, options) => {
   createInitialJson(path, languages)
 
   // Make a request and save the data
-  modifyContent(options)
+  modifyFileContent(options)
 }
 
 exports.onCreatePage = async ({ page, actions }, pluginOptions) => {
