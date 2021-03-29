@@ -1,5 +1,6 @@
 import fs from 'fs-extra'
 import chalk from 'chalk'
+import { log } from 'console'
 import { template } from './template'
 
 export async function _write(path, content = '') {
