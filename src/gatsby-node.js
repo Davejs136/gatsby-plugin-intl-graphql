@@ -1,5 +1,5 @@
 const webpack = require("webpack")
-const { createInitialJson, modifyContent } = require("./helpers")
+const { createInitialJson, modifyContent } = require("./helpers/index")
 
 exports.onCreateWebpackConfig = ({ actions, plugins }, pluginOptions) => {
   const { redirectComponent = null, languages, defaultLanguage } = pluginOptions
