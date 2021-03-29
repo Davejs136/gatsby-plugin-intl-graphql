@@ -5,7 +5,7 @@ import { checkLoginUser } from './checkLoginUser'
 import { _write } from './writeFile'
 import { cleanup } from './cleanupFile'
 
-export async function modifyContent({
+export default async function modifyContent({
   path,
   url,
   query,
