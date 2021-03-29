@@ -71,5 +71,6 @@ yarn.lock
 
 # plugin build
 /*.js
+/helpers
 
 yarn.lock
