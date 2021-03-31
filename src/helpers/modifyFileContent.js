@@ -33,6 +33,8 @@ export default async function modifyFileContent({
 
       writeJsonFile(pathname, response)
       cleanJsonFile(pathname)
+
+      setTimeout(() => cleanJsonFile(pathname), 200)
     })
 
   } catch (error) {
